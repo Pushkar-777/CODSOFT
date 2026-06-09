@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Welcome Screen -->
+        <div class="welcome-screen">
+            <h1>🚀 QuizVerse AI</h1>
+            <p>Test Your Knowledge. Track Your Growth.</p>
+
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-container hidden">
+
+            <div class="top-bar">
+                <div id="question-count">Question 1/30</div>
+                <div id="timer">30s</div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <h2 id="question">Question Here</h2>
+
+            <div id="answer-buttons" class="btn-grid">
+            </div>
+
+            <button id="next-btn">Next Question</button>
+
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-container hidden">
+
+            <h2>🎉 Quiz Completed</h2>
+
+            <p id="score-text"></p>
+
+            <button onclick="location.reload()">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
