@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Job</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .apply-container{
+            width:100%;
+            min-height:85vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f5f7fb;
+        }
+
+        .apply-box{
+            width:450px;
+            background:#fff;
+            padding:35px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,.1);
+        }
+
+        .apply-box h2{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:25px;
+        }
+
+        .apply-box input,
+        .apply-box textarea{
+
+            width:100%;
+            padding:14px;
+            margin-bottom:18px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:16px;
+
+        }
+
+        .apply-box textarea{
+            resize:none;
+            height:120px;
+        }
+
+        .apply-box button{
+            width:100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">JobPortal</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="jobs.html">Jobs</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="register.html">Register</a></li>
+
+<li><a href="applications.html">Applications</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="apply-container">
+
+<div class="apply-box">
+
+<h2>Apply For Job</h2>
+
+<input
+type="text"
+id="fullName"
+placeholder="Full Name">
+
+<input
+type="email"
+id="email"
+placeholder="Email">
+
+<input
+type="text"
+id="jobTitle"
+placeholder="Job Title">
+
+<textarea
+id="skills"
+placeholder="Enter Your Skills"></textarea>
+
+<button
+class="btn"
+onclick="applyJob()">
+
+Submit Application
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Job Portal | Made by Pushkar Srivastava
+
+</p>
+
+</footer>
+
+<script src="js/apply.js"></script>
+
+</body>
+
+</html>

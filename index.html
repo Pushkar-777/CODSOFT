@@ -3,59 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizVerse AI</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Job Portal | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
+    <!-- Navbar -->
 
-        <!-- Welcome Screen -->
-        <div class="welcome-screen">
-            <h1>🚀 QuizVerse AI</h1>
-            <p>Test Your Knowledge. Track Your Growth.</p>
+    <header>
 
-            <button id="start-btn">Start Quiz</button>
-        </div>
+        <nav class="navbar">
 
-        <!-- Quiz Screen -->
-        <div class="quiz-container hidden">
-
-            <div class="top-bar">
-                <div id="question-count">Question 1/30</div>
-                <div id="timer">30s</div>
+            <div class="logo">
+                JobPortal
             </div>
 
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
-            </div>
+            <ul class="nav-links">
 
-            <h2 id="question">Question Here</h2>
+                <li><a href="index.html" class="active">Home</a></li>
 
-            <div id="answer-buttons" class="btn-grid">
-            </div>
+                <li><a href="jobs.html">Jobs</a></li>
 
-            <button id="next-btn">Next Question</button>
+                <li><a href="login.html">Login</a></li>
+
+                <li><a href="register.html">Register</a></li>
+
+                <li><a href="applications.html">Applications</a></li>
+
+                <li>
+    <button class="btn logoutBtn" onclick="logoutUser()">Logout</button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Find Your Dream Job</h1>
+
+            <p>
+
+                Search internships and full-time jobs from top companies.
+
+            </p>
+
+            <a href="jobs.html">
+
+                <button class="btn">
+
+                    Explore Jobs
+
+                </button>
+
+            </a>
 
         </div>
 
-        <!-- Result Screen -->
-        <div class="result-container hidden">
+    </section>
 
-            <h2>🎉 Quiz Completed</h2>
+    <!-- Featured Jobs -->
 
-            <p id="score-text"></p>
+    <section class="featured">
 
-            <button onclick="location.reload()">
-                Restart Quiz
-            </button>
+        <h2>Featured Jobs</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Frontend Developer</h3>
+
+                <p><strong>Company :</strong> Google</p>
+
+                <p><strong>Location :</strong> Bangalore</p>
+
+                <a href="apply.html">
+
+                    <button class="btn">Apply Now</button>
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Backend Developer</h3>
+
+                <p><strong>Company :</strong> Microsoft</p>
+
+                <p><strong>Location :</strong> Hyderabad</p>
+
+                <a href="apply.html">
+
+                    <button class="btn">Apply Now</button>
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Java Developer</h3>
+
+                <p><strong>Company :</strong> Infosys</p>
+
+                <p><strong>Location :</strong> Pune</p>
+
+                <a href="apply.html">
+
+                    <button class="btn">Apply Now</button>
+
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
+    <!-- About -->
+
+    <section class="about">
+
+        <h2>Why Choose Our Job Portal?</h2>
+
+        <p>
+
+            We connect students and professionals with the best companies.
+
+            Search jobs, apply instantly and track your applications easily.
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Job Portal | Made by Pushkar Srivastava
+
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

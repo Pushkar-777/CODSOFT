@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Jobs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            JobPortal
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html" class="active">Jobs</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li>
+    <button class="btn logoutBtn" onclick="logoutUser()">Logout</button>
+</li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<section class="featured">
+
+    <h2>Available Jobs</h2>
+
+    <input
+        type="text"
+        id="searchJob"
+        placeholder="Search Job..."
+        style="width:100%;padding:15px;border-radius:8px;border:1px solid #ccc;margin-bottom:30px;font-size:16px;"
+    >
+
+    <div class="cards" id="jobList">
+
+        <div class="card">
+
+            <h3>Frontend Developer</h3>
+
+            <p><strong>Company :</strong> Google</p>
+
+            <p><strong>Location :</strong> Bangalore</p>
+
+            <p><strong>Salary :</strong> ₹8 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Backend Developer</h3>
+
+            <p><strong>Company :</strong> Microsoft</p>
+
+            <p><strong>Location :</strong> Hyderabad</p>
+
+            <p><strong>Salary :</strong> ₹10 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Java Developer</h3>
+
+            <p><strong>Company :</strong> Infosys</p>
+
+            <p><strong>Location :</strong> Pune</p>
+
+            <p><strong>Salary :</strong> ₹6 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Python Developer</h3>
+
+            <p><strong>Company :</strong> TCS</p>
+
+            <p><strong>Location :</strong> Noida</p>
+
+            <p><strong>Salary :</strong> ₹7 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>UI/UX Designer</h3>
+
+            <p><strong>Company :</strong> Adobe</p>
+
+            <p><strong>Location :</strong> Gurugram</p>
+
+            <p><strong>Salary :</strong> ₹9 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Data Analyst</h3>
+
+            <p><strong>Company :</strong> Deloitte</p>
+
+            <p><strong>Location :</strong> Mumbai</p>
+
+            <p><strong>Salary :</strong> ₹7.5 LPA</p>
+
+            <a href="apply.html">
+                <button class="btn">Apply</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Job Portal | Made by Pushkar Srivastava
+    </p>
+
+</footer>
+
+<script src="js/jobs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

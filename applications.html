@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">JobPortal</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="applications.html" class="active">Applications</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="featured">
+
+    <h2>My Applications</h2>
+
+    <div class="cards" id="applicationList"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 Job Portal | Made by Pushkar Srivastava</p>
+</footer>
+
+<script>
+
+let applications = JSON.parse(localStorage.getItem("applications")) || [];
+
+let container = document.getElementById("applicationList");
+
+if(applications.length === 0){
+
+    container.innerHTML = "<h3 style='text-align:center;'>No Applications Found</h3>";
+
+}else{
+
+    applications.forEach(function(app){
+
+        container.innerHTML += `
+        <div class="card">
+            <h3>${app.jobTitle}</h3>
+            <p><strong>Name:</strong> ${app.fullName}</p>
+            <p><strong>Email:</strong> ${app.email}</p>
+            <p><strong>Skills:</strong> ${app.skills}</p>
+        </div>
+        `;
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
